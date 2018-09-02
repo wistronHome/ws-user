@@ -1,0 +1,26 @@
+<nz-layout>
+    <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed">
+        <ul nz-menu [nzTheme]="'dark'" [nzMode]="'inline'" [nzInlineCollapsed]="isCollapsed">
+            <li nz-submenu>
+                <span title><i class="anticon anticon-user"></i><span class="nav-text">用户管理</span></span>
+                <ul>
+                    <li nz-menu-item (click)="navigateTo('list')">用户列表</li>
+                    <li nz-menu-item (click)="navigateTo('online')">在线用户</li>
+                </ul>
+            </li>
+        </ul>
+    </nz-sider>
+    <nz-layout>
+
+        <nz-content style="margin:0 16px;">
+            <nz-breadcrumb style="margin:16px 0;">
+                <nz-breadcrumb-item>用户管理</nz-breadcrumb-item>
+                <nz-breadcrumb-item>用户列表</nz-breadcrumb-item>
+            </nz-breadcrumb>
+            <div style="padding:24px; background: #fff; height: 100%;">
+                <router-outlet></router-outlet>
+            </div>
+        </nz-content>
+        <nz-footer style="text-align: center;">Guanyj Design ©2018 Implement By Ant Design of Angular6</nz-footer>
+    </nz-layout>
+</nz-layout>
