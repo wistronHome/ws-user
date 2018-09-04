@@ -6429,9 +6429,9 @@ wrappy@1:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/wrappy/download/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
 
-ws-common@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.npmjs.org/ws-common/-/ws-common-0.0.1.tgz#335db9ee93d4f86fbe9ea240834366128f11c420"
+ws-common@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npmjs.org/ws-common/-/ws-common-0.0.3.tgz#40c02a0b65b576c4729f49bdc61986145ccdf062"
   dependencies:
     "@angular/animations" "^6.1.0"
     "@angular/common" "^6.1.0"
