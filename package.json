@@ -3,10 +3,10 @@
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
-        "start": "ng serve --port=4201 --preserve-symlinks",
+        "start": "ng serve --port=4202",
         "build": "ng build",
-        "build:prod": "ng build --pred --sourcemaps --preserve-symlinks --base-href /user/",
-        "package": "ng build --pred --sourcemaps --preserve-symlinks --base-href /user/",
+        "build:prod": "ng build --pred --sourcemaps --base-href /user/",
+        "package": "ng build --pred --sourcemaps --base-href /user/",
         "upgrade": "npm update ws-common",
         "test": "ng test",
         "lint": "ng lint",
@@ -26,7 +26,7 @@
         "core-js": "^2.5.4",
         "ng-zorro-antd": "^1.4.0",
         "rxjs": "^6.0.0",
-        "ws-common": "^0.0.0",
+        "ws-common": "^0.0.1",
         "zone.js": "~0.8.26"
     },
     "devDependencies": {
