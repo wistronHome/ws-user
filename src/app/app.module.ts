@@ -14,6 +14,7 @@ registerLocaleData(zh);
 import {NZ_I18N, zh_CN, NgZorroAntdModule} from 'ng-zorro-antd';
 import {RouterModule} from '@angular/router';
 import {ROUTER_CONFIG} from './app.routes';
+import {WsCommonModule} from 'ws-common';
 
 @NgModule({
     imports: [
@@ -23,6 +24,7 @@ import {ROUTER_CONFIG} from './app.routes';
         BrowserAnimationsModule,
         /** 导入 ng-zorro-antd 模块 **/
         NgZorroAntdModule,
+        WsCommonModule,
         RouterModule.forRoot(ROUTER_CONFIG)
     ],
     declarations: [

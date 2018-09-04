@@ -10,6 +10,7 @@ import {ROUTER_CONFIG} from './user.routes';
 import {UserListComponent} from './user-list/user-list.component';
 import {CommonModule} from '@angular/common';
 import {UserOnlineComponent} from './user-online/user-online.component';
+import {WsCommonModule} from 'ws-common';
 
 @NgModule({
     imports: [
@@ -18,6 +19,7 @@ import {UserOnlineComponent} from './user-online/user-online.component';
         ReactiveFormsModule,
         /** 导入 ng-zorro-antd 模块 **/
         NgZorroAntdModule,
+        WsCommonModule,
         RouterModule.forChild(ROUTER_CONFIG)
     ],
     declarations: [
