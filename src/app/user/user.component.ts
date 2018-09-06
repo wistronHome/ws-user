@@ -23,6 +23,6 @@ export class UserComponent implements OnInit {
     }
 
     navigateTo(param: string) {
-        this.$router.navigate([`/user/${param}`]).then();
+        this.$router.navigate([`/user-manage/${param}`]).then();
     }
 }

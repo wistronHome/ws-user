@@ -1,2 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<ul nz-menu [nzMode]="'horizontal'">
+    <ng-template
+        *ngFor="let item of menuConfig">
+        <li *ngIf="item.children && item.children.length === 0" nz-menu-item (click)="navigation(item.text)">{{item.text}}</li>
+        <li *ngIf="item.children && item.children.length > 0" nz-submenu>
+            <span title>{{item.text}}</span>
+        </li>
+    </ng-template>
+</ul>
 <router-outlet></router-outlet>
